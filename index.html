@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PixelHypeStudio Privacy Policy</title>
+<meta name="description" content="Privacy policy for the PixelHypeStudio Pin Publisher application and the PixelHypeStudio digital download shop.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #16181d;
+    --muted: #5b6070;
+    --rule: #e3e5ea;
+    --link: #b0203c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101216;
+      --fg: #e8eaef;
+      --muted: #9aa0af;
+      --rule: #262a33;
+      --link: #ff7a92;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+  header {
+    border-block-end: 1px solid var(--rule);
+    padding-block-end: 1.75rem;
+    margin-block-end: 2.5rem;
+  }
+  .brand {
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 0.75rem;
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.02em;
+  }
+  .updated {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+  h2 {
+    font-size: 1.125rem;
+    margin: 2.75rem 0 0.75rem;
+    letter-spacing: -0.01em;
+  }
+  p, li { color: var(--fg); }
+  ul { padding-inline-start: 1.25rem; }
+  li { margin-block-end: 0.5rem; }
+  a { color: var(--link); }
+  .lead { font-size: 1.0625rem; }
+  footer {
+    margin-block-start: 4rem;
+    padding-block-start: 1.75rem;
+    border-block-start: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="brand">PixelHypeStudio</p>
+    <h1>PixelHypeStudio Privacy Policy</h1>
+    <p class="updated">Operated by PixelHypeStudio &middot; Last updated: 29 August 2026</p>
+  </header>
+
+  <p class="lead">
+    PixelHypeStudio is a digital download shop operated by an individual seller. This policy
+    covers the PixelHypeStudio Pin Publisher, a private application that uses the Pinterest API
+    to publish product boards and Pins to the shop owner's own Pinterest business account.
+  </p>
+
+  <h2>Who this application is for</h2>
+  <p>
+    The Pin Publisher is a single user, private tool. It is used only by the owner of
+    PixelHypeStudio, acting on their own Pinterest account. It is not offered to the public,
+    it has no sign up, and no third party ever authenticates through it.
+  </p>
+
+  <h2>Information the application handles</h2>
+  <ul>
+    <li>
+      <strong>Pinterest OAuth tokens.</strong> When the shop owner authorizes the application
+      through Pinterest, Pinterest returns an access token and a refresh token for the owner's
+      own account. These are the only credentials the application holds.
+    </li>
+    <li>
+      <strong>Board and Pin data the owner creates.</strong> Product titles, descriptions,
+      images, videos, and Etsy listing links that the owner supplies in order to publish them
+      as Pins.
+    </li>
+    <li>
+      <strong>Pinterest API responses.</strong> Board identifiers, Pin identifiers, and error
+      messages returned by Pinterest, used to confirm that a publish succeeded.
+    </li>
+  </ul>
+
+  <h2>Information the application does not collect</h2>
+  <ul>
+    <li>No personal information about Pinterest users, followers, or visitors.</li>
+    <li>No names, email addresses, postal addresses, or phone numbers of any third party.</li>
+    <li>No payment or financial information.</li>
+    <li>No analytics, tracking pixels, advertising identifiers, or cookies.</li>
+    <li>No browsing history or device fingerprints.</li>
+  </ul>
+
+  <h2>How the information is used</h2>
+  <p>
+    The Pinterest tokens are used for one purpose only: authenticating requests to the Pinterest
+    API in order to create boards and Pins on the owner's own account, and to read back those
+    boards and Pins to confirm the result. The tokens are never used for any other Pinterest
+    account and are never used to read another user's data.
+  </p>
+
+  <h2>Where the information is stored</h2>
+  <p>
+    Tokens are stored in a local environment file on the shop owner's own computer, outside of
+    version control. They are not uploaded to any hosted database, not transmitted to any third
+    party service, and not embedded in any distributed code. Product images and copy are stored
+    locally alongside the shop's own working files.
+  </p>
+
+  <h2>Sharing and disclosure</h2>
+  <p>
+    No data is sold, rented, traded, or shared with anyone. The only external service the
+    application communicates with is Pinterest itself, at
+    <a href="https://api.pinterest.com/">api.pinterest.com</a>, in order to perform the publish
+    actions described above. Data may be disclosed only if required by law.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Tokens are kept only while the application is in active use and are deleted when they are no
+    longer needed. Authorization can be withdrawn at any time from
+    <a href="https://www.pinterest.com/settings/apps/">Pinterest account settings</a>, which
+    immediately invalidates the tokens and revokes the application's access. On revocation, any
+    stored token is deleted.
+  </p>
+
+  <h2>Security</h2>
+  <p>
+    Credentials are kept out of source control, are not committed to any public repository, and
+    are not shared with anyone. All communication with the Pinterest API is over HTTPS. If a
+    token is ever suspected of being exposed, it is revoked in Pinterest settings and replaced.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    This application is not directed at children and does not knowingly handle any information
+    relating to anyone under the age of 13.
+  </p>
+
+  <h2>Pinterest platform terms</h2>
+  <p>
+    Use of the Pinterest API by this application follows the
+    <a href="https://developers.pinterest.com/docs/reference/developer-guidelines/">Pinterest
+    Developer Guidelines</a> and the
+    <a href="https://developers.pinterest.com/terms/">Pinterest Developer Terms</a>.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy changes, the updated version is published on this page and the date at the
+    top is revised.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy can be sent to
+    <a href="mailto:yassirfhalk@gmail.com">yassirfhalk@gmail.com</a>.
+  </p>
+
+  <footer>
+    PixelHypeStudio
+  </footer>
+</main>
+</body>
+</html>
